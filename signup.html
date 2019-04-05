@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>-------------Registration--------------</title>
+</head>
+
+<body style ="background-color:lightgrey">
+<script  src="validate.js">
+	
+</script>
+
+
+	<h1 style="text-align:center;background-color:tomato">-----------REGISTER--------- </h1>
+	
+	<form method="get" action="/Servlet">
+	
+	<b>First name :	</b>
+	<input type="text" placeholder="First name"required><br>
+	
+	<br><br>
+	<b>Last name:	</b>
+	<input type="text" placeholder="Last name"required><br>
+	
+	<br><br>
+	<b>Mobile No.:	</b>
+	<input type="text" placeholder="9861783612"required><br>
+	
+	<br><br>
+	<b>Email:	</b>
+	<input type="email" placeholder="abc@gmail.com" id="email" type="email" onkey='validate();' required><br>
+	<span id='msg'></span>
+	
+	
+	<br><br>
+	<b>Gender:	<br></b>
+	<input type="radio" name="gender" value="male">Male<br>
+	<input type="radio" name="gender" value="female">Female<br>
+	<input type="radio" name="gender" value="other">Other<br>
+	
+	<br><br>
+	<b>DOB:	</b>
+	<input type="date" name="bday" required><br>
+	
+	<br><br>
+	Username : 
+	<input type="text" placeholder="Username" required><br>
+  
+  	<br>
+  	Password : 
+  	<input name="password" id="password" type="password" placeholder="password" onkeyup='check();' >
+	
+	<br>
+	<br>
+	
+	Confirm password: 
+  	<input type="password" name="confirm_password" id="confirm_password" placeholder="password" onkeyup='check();' /> 
+  	<span id='message'></span>
+	
+	<br><br>
+  	
+  	<button onclick="myFunction()">Submit</button>
+
+
+</form>
+	
+
+</body>
+</html>
